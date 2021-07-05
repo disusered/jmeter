@@ -77,7 +77,7 @@ This will deploy all the needed applications :
 
 ### 3. Starting the test
 
-`./start_test.sh -j large.jmx -n default -i 20 -r`
+`./start_test.sh -n default -j k8s-load-test.jmx -i 20`
 
 Usage :
 ```sh
