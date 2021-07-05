@@ -148,11 +148,13 @@ for ((i=0; i<end; i++))
 do
     logit "INFO" "Copying scenario/${jmx_dir}/${jmx} to ${slave_pods[$i]}"
     kubectl cp -c jmslave "scenario/${jmx_dir}/${jmx}" -n "${namespace}" "${slave_pods[$i]}:/opt/jmeter/apache-jmeter/bin/" &
+    kubectl cp -c jmslave "scenario/${jmx_dir}/${jmx}.csv" -n "${namespace}" "${slave_pods[$i]}:/opt/jmeter/apache-jmeter/bin/" &
 done # for i in "${slave_pods[@]}"
 logit "INFO" "Finish copying scenario in slaves pod"
 
 logit "INFO" "Copying scenario/${jmx_dir}/${jmx} into ${master_pod}"
 kubectl cp -c jmmaster "scenario/${jmx_dir}/${jmx}" -n "${namespace}" "${master_pod}:/opt/jmeter/apache-jmeter/bin/" &
+kubectl cp -c jmmaster "scenario/${jmx_dir}/${jmx}.csv" -n "${namespace}" "${master_pod}:/opt/jmeter/apache-jmeter/bin/" &
 
 
 logit "INFO" "Installing needed plugins on slave pods"
