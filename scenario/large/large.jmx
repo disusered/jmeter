@@ -101,7 +101,7 @@
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV users data" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">/Users/carlos/Development/edvolution/jmeter/scenario/large/L-users_202107050117_2103.csv</stringProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
@@ -342,7 +342,7 @@
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV users data" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="filename">/Users/carlos/Development/edvolution/jmeter/scenario/my-scenario/S-users_202107050058_5432.csv</stringProp>
+          <stringProp name="filename">/Users/carlos/Development/edvolution/jmeter/scenario/large/L-users_202107050117_2103.csv</stringProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
